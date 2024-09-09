@@ -1,0 +1,65 @@
+.class-1{
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.class-2{
+    color: green;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.class-4 .class-5{
+    color: #ee82ee;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.class-6{
+    color: blue;
+    font-style: italic;
+}
+
+.class-7{
+    text-decoration: underline;
+    font-style: italic;
+    color: black;
+}
+
+h3{
+    color: brown;
+    display: block;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h4{
+    font-style: italic;
+    color: brown;
+    display: block;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.list{
+    color: #ff00ff;
+    font-style: italic;
+}
+
+.list .list2{
+    color: #00bfff;
+
+}
+
+.class-8{
+    color: goldenrod;
+}
+
+p{
+    color: limegreen;
+    font-style: italic;
+    text-decoration: underline;
+}

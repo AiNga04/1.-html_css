@@ -1,0 +1,29 @@
+h1 {
+  color: red !important;  /* ưu tiên nhất */
+}
+
+.bgGreen{
+    color: green;
+}
+
+.bigSize{
+    font-size: 20px;
+}
+
+.child, .son{
+    /* dấu "," là cùng dùng chung thuộc tính */
+    color: cadetblue;
+}
+
+/* Trang trí riêng */
+.parent .child{
+    /* dấu " " là cha con */
+    color: darkorange;
+}
+
+#logo{
+    /* "#" độ ưu tiên cao hơn "." */
+    color: rebeccapurple;
+    font-size: 60px;
+    font-weight: bold;
+}

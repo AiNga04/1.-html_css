@@ -1,0 +1,59 @@
+/* .card1 {
+  width: 400px;
+  height: 200px;
+  color: red;
+  line-height: 150px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: block;
+}
+
+.card2 {
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  color: blue;
+  background-color: aqua;
+  display: inline;
+}
+
+.card3 {
+  text-align: center;
+  color: blue;
+  display: inline-block;
+}
+
+.card4 ul li {
+  list-style: none;
+  text-align: center;
+  color: rgb(0, 34, 255);
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+.card5 ul li {
+  display: flex;
+  list-style: none !important;
+}
+
+div {
+  background-color: violet;
+}
+
+.nl{
+    align-self: flex-start;
+} */
+
+.cardDisplayFlex {
+  background-color: aquamarine;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+  border: 10px dashed violet;
+  padding: 20px;
+
+  background: linear-gradient(0, rgba(0, 222, 222, 0.3), rgba(222, 0, 0, 0.3)),
+    url(https://haycafe.vn/wp-content/uploads/2022/02/Anh-gai-xinh-de-thuong.jpg)
+      repeat border-box center/contain;
+
+  /* background-position: center;
+  background-origin: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      0,
+      rgba(0, 222, 222, 0.5),
+      rgba(222, 0, 0, 0.5)
+    ),
+    url(https://haycafe.vn/wp-content/uploads/2022/02/Anh-gai-xinh-de-thuong.jpg); */
+}
+
+.cac-loai-the {
+  text-align: center;
+  color: #00ff5980;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  float: left;
+  padding: 5px 10px;
+}
+
+.img img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.display {
+  background-color: lightpink;
+}
+
+.an-hinh-anh {
+  font-size: 30px;
+}
+
+.an-hinh-anh span {
+  color: rgba(8, 0, 255, 0.7);
+  font-weight: bold;
+}
+
+input:checked ~ .img {
+  display: none;
+}
+
+/* Menu */
+
+.menu-da-cap {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+}
+
+.menu ul li {
+  position: relative;
+  float: left;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #333;
+}
+
+.menu ul li a:hover {
+  background-color: #555;
+}
+
+.menu ul li ul.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+}
+
+.menu ul li ul.submenu li {
+  float: none;
+}
+
+.menu ul li ul.submenu li a {
+  padding: 10px 20px;
+  width: 200px;
+}
+
+.menu ul li ul.submenu li ul.submenu {
+  left: 100%;
+  top: 0;
+}
+
+.menu ul li:hover > ul.submenu {
+  display: block;
+}
