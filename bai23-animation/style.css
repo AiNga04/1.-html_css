@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  height: 100vh;
+  font-size: 2.8rem;
+}
+
+.box__animation {
+  --primary-color: #00f;
+  --second-lolor: yellow;
+  --size: 200px;
+  position: relative;
+}
+
+.box__animation::after {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  content: "";
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  border: 16px solid var(--primary-color);
+  border-top: 16px solid var(--second-lolor);
+  animation: spin_animatin 1s infinite;
+}
+
+@keyframes spin_animatin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
