@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Add JS into HTML</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -54,17 +55,30 @@
   </head>
 
   <body>
-    <h1 id="heading_title">Tiêu đề</h1>
-    <p>Nội dung văn bản</p>
+    <h1 id="heading_title" style="color: blue;">Tiêu đề</h1>
+    <p class="title">Nội dung văn bản</p>
     <ul>
       <li id="noi_dung_1">Nội dung 1</li>
-      <li>Nội dung 2</li>
-      <li>Nội dung 3
+      <li id="noi_dung_2">Nội dung 2</li>
+      <li id="noi_dung_3">Nội dung 3
         <a href="ainga.dev"></a>
       </li>
+      <a href="ainga.dev">Link_1</a>
+      <br>
+      <a href="ainga.dev">Link_2</a>
     </ul>
 
+    <div class="desc">
+      <p class="desc__content">
+        tôi đang học
+        <b>lập trình</b>
+        fullstack
+      </p>
+    </div>
+
     <input type="checkbox" class="checkbox" id="checkbox"> Click!
+
+    <div class="container"></div>
   </body>
 
   </html>

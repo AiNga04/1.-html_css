@@ -1,0 +1,18 @@
+.title {
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+}
+
+.title_2 {
+  font-size: 25px;
+  color: violet;
+  font-weight: bold;
+}
+
+.new_title {
+  font-size: 25px;
+  color: palegreen;
+  font-weight: bold;
+  font-style: italic;
+}
