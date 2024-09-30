@@ -27,3 +27,22 @@ function setUp() {
 }
 
 window.onload = setUp;
+
+let btn3 = document.querySelector(".btn3");
+let btn4 = document.querySelector(".btn4");
+
+btn3.addEventListener("click", () => {
+  btn3.style.background = "yellow";
+  btn3.style.color = "red";
+});
+
+btn4.addEventListener("mouseover", () => {
+  alert("Hello_1");
+});
+
+let hello = () => {
+  alert("Hello_2");
+};
+btn4.addEventListener("mouseover", hello);
+
+btn4.removeEventListener("mouseover", hello);
