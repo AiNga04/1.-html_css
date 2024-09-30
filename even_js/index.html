@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <h1 class="title" onmouseover="this.style.color = 'red'" onmouseleave="this.style.color = '#000'">1. Inline Event
+    </h1>
+    <div class="div__button">
+        <button onclick="alert('bạn vừa click vào button 1')">Button 1</button>
+        <button ondblclick="alert('bạn vừa đúp click vào button 2')">Button 2</button>
+    </div>
+
+    <h1 class="title" onmouseover="this.style.color = 'red'" onmouseleave="this.style.color = '#000'">2. DOM Level 0
+    </h1>
+
+    <div class="div__button">
+        <button class="btn1">Button 1</button>
+        <button class="btn2">Button 2</button>
+    </div>
+
+    <p class="desc">Hello world</p>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
