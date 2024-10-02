@@ -14,3 +14,27 @@ for (let i = 1; i <= 151; i++) {
 
   img.setAttribute("class", `img${i}`);
 }
+
+let randomColor = () => {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+};
+
+let stickers = document.querySelectorAll(".container__div");
+
+let changeColor = function () {
+  this.style.background = randomColor();
+};
+
+let notify = function () {
+  alert(this.lastChild.textContent);
+};
+
+stickers.forEach((item) => {
+  if (item instanceof HTMLElement) {
+    item.addEventListener("click", changeColor, { once: true });
+    item.addEventListener("click", notify, { once: true });
+  }
+});

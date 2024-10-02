@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.slide__title {
+  font-size: 3rem;
+  color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+/* active */
+
+.main__slide {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(122, 162, 237, 0.858);
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.main__panel {
+  flex: 1;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: flex 0.7s;
+}
+
+.main__panel h3 {
+  color: #fff;
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+  font-size: 1.6rem;
+  opacity: 0;
+}
+
+.main__panel.active {
+  flex: 10;
+}
+
+.main__panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.7s 0.3s;
+}
+
+@media (max-width: 720px) {
+  .main__panel:nth-of-type(4),
+  .main__panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+/* progress */
+:root {
+  --progress-fill: #11b9edc9;
+  --progress-empty: #ccc;
+}
+
+.progress__title {
+  font-size: 3rem;
+  color: red;
+  text-align: center;
+  padding: 20px;
+}
+
+.blog {
+  width: 100vw;
+  height: 100vh;
+}
+
+.progress-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  width: 450px;
+  max-width: 100%;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.progress-wrapper::before {
+  content: "";
+  height: 4px;
+  background: var(--progress-empty);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
+.progress {
+  content: "";
+  height: 4px;
+  background: var(--progress-fill);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
+.step {
+  border: 3px solid var(--progress-empty);
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: var(--progress-empty);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  height: 40px;
+  width: 60px;
+  border-radius: 10px;
+  background-color: var(--progress-fill);
+  color: #fff;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.btn:disabled {
+  background: var(--progress-empty);
+  transform: scale(1);
+  cursor: not-allowed;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.step.active {
+  color: var(--progress-fill);
+  border-color: currentColor;
+}
+
+/* search */
+.search-group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.input {
+  border-radius: 18px;
+  border: 0;
+  background-color: #fff;
+  font-size: 1.8rem;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.7s;
+}
+
+.search button {
+  background-color: #fff;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+}
+
+.search.active .input {
+  width: 350px;
+  padding-left: 55px;
+}
+
+.btn:focus,
+input:focus {
+  outline: none;
+}
+
+.fa-magnifying-glass {
+  color: #ccc;
+  transition: 0.7s;
+}
+
+.search.active .fa-magnifying-glass {
+  color: aquamarine;
+}
+
+/* button */
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_1 {
+  cursor: pointer;
+  background-color: rgb(239, 52, 239);
+  border-radius: 10px;
+  border: 1px solid rgb(254, 61, 254);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}

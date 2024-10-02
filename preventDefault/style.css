@@ -1,0 +1,27 @@
+.login__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#password,
+#username,
+#submit {
+  padding: 5px;
+  border: 0.5 solid rgb(192, 187, 197);
+  border-radius: 5px;
+}
+
+.box__grand {
+  width: 90vw;
+  background-color: aqua;
+}
+
+.box__parent {
+  width: 70vw;
+  background-color: rgba(96, 219, 48, 0.773);
+}
+
+.box__child {
+  width: 50vw;
+  background-color: rgba(235, 74, 235, 0.797);
+}
